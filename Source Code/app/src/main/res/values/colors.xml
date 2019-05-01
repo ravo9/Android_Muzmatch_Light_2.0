@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Basic Values Section -->
+
+    <color name="none">#00000000</color>
+
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="color000">#FFFFFF</color>
+    <color name="color001">#E9E9EB</color>
+    <color name="color002">#F82057</color>
+    <color name="color003">#000000</color>
+
+    <color name="colorActiveState">#7BD279</color>
+
+
+    <!-- Exact Values Section -->
+
+    <color name="badgeTextLeft">@color/color003</color>
+    <color name="badgeBackgroundLeft">@color/color001</color>
+
+    <color name="badgeTextRight">@color/color000</color>
+    <color name="badgeBackgroundRight">@color/color002</color>
+
+    <color name="badgeTextUniversal">@color/color003</color>
+    <color name="badgeBackgroundUniversal">@color/color001</color>
+
+</resources>

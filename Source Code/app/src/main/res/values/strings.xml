@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Muzmatch Light</string>
+
+    <dimen name="speech_bubble_corners">10dp</dimen>
+    <dimen name="speech_bubble_corners_plus_tail">15dp</dimen>
+
+</resources>

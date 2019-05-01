@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:drawable="@drawable/badge_left"
+        android:left="8dp"
+        android:bottom="8dp" />
+
+    <item
+        android:width="@dimen/speech_bubble_corners_plus_tail"
+        android:height="@dimen/speech_bubble_corners_plus_tail"
+        android:gravity="bottom|left"
+        android:drawable="@drawable/badge_right_tail" />
+
+</layer-list>
