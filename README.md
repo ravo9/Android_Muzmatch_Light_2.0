@@ -3,9 +3,7 @@
 
 What has been done in the current version:
 
-1. General app structure based on the clean MVVM design pattern, using ViewModel, repositories, data persistence (based on the Room library).
-
-The whole code is written using Kotlin language.
+1. General app structure based on the clean MVVM design pattern, using ViewModel, repositories, data persistence (based on the Room library). The whole code is written using Kotlin language.
 
 2. A good progress in the UI, including custom EditText View, and message bubbles.
 
