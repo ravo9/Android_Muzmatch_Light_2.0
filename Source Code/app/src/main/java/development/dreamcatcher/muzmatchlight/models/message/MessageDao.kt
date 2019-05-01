@@ -14,5 +14,8 @@ interface MessageDao {
     fun getAllMessages(): LiveData<List<MessageEntity>>
 
     @Delete
-    fun delete(messageEntity: MessageEntity)
+    fun deleteMessage(messageEntity: MessageEntity)
+
+    @Query("DELETE FROM messages_table")
+    fun deleteAllMessages()
 }

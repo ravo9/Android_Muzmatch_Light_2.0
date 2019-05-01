@@ -28,9 +28,6 @@ class ChatActivity : AppCompatActivity() {
         // Initialize ViewModel
         viewModel = ViewModelProviders.of(this).get(ChatViewModel::class.java)
 
-        // Upload fake messages as an initial input
-        viewModel.uploadFakeInitialMessages(dateTimeInstance)
-
         // Initialize RecyclerView
         recyclerView_messages.adapter           = messagesAdapter
         recyclerView_messages.layoutManager     = LinearLayoutManager(this)
@@ -38,6 +35,11 @@ class ChatActivity : AppCompatActivity() {
         // Observe data provided by ViewModel
         viewModel.getAllMessages().observe(this, Observer<List<MessageEntity>> { messages ->
             messagesAdapter.setMessages(messages)
+
+            // Upload fake messages as an initial input to mock another user's messages
+            if (messages.isEmpty()) {
+                viewModel.uploadFakeInitialMessages(dateTimeInstance)
+            }
         })
 
         editText_messageInput.setOnKeyListener(View.OnKeyListener { v, keyCode, event ->

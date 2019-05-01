@@ -25,10 +25,21 @@ class MessageRepository(application: Application) {
         val insertMessageAsyncTask = InsertMessageAsyncTask(messageDao).execute(message)
     }
 
+    fun deleteAllMessages() {
+        val deleteMessagesAsyncTask = InsertMessageAsyncTask(messageDao).execute()
+    }
+
     private class InsertMessageAsyncTask(val messageDao: MessageDao) : AsyncTask<MessageEntity, Unit, Unit>() {
 
         override fun doInBackground(vararg p0: MessageEntity?) {
             messageDao.insert(p0[0]!!)
+        }
+    }
+
+    private class DeleteMessagesAsyncTask(val messageDao: MessageDao) : AsyncTask<Unit, Unit, Unit>() {
+
+        override fun doInBackground(vararg p0: Unit) {
+            messageDao.deleteAllMessages()
         }
     }
 }
