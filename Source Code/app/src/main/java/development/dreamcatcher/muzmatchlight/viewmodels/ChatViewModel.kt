@@ -6,6 +6,7 @@ import androidx.lifecycle.LiveData
 import development.dreamcatcher.muzmatchlight.models.message.MessageEntity
 import development.dreamcatcher.muzmatchlight.models.message.MessageRepository
 import java.text.DateFormat
+import java.util.*
 
 
 class ChatViewModel(application: Application) : AndroidViewModel(application) {
@@ -23,10 +24,11 @@ class ChatViewModel(application: Application) : AndroidViewModel(application) {
     }
 
     fun uploadFakeInitialMessages(dateTimeInstance: DateFormat) {
-        val currentDate = dateTimeInstance.format(java.util.Date())
-        addMessage(MessageEntity("Hi ;)", currentDate, false))
-        addMessage(MessageEntity("Hello :)", currentDate, true))
-        addMessage(MessageEntity("How are you today...? ;)", currentDate, false))
-        addMessage(MessageEntity("Not bad :P How about yourself?", currentDate, true))
+        val date = Date(49, 3, 30, 22, 30)
+        val fakeDate = dateTimeInstance.format(date)
+        addMessage(MessageEntity("Hi ;)", fakeDate, false))
+        addMessage(MessageEntity("Hello :)", fakeDate, true))
+        addMessage(MessageEntity("How are you today...? ;)", fakeDate, false))
+        addMessage(MessageEntity("Not bad :P How about yourself?", fakeDate, true))
     }
 }

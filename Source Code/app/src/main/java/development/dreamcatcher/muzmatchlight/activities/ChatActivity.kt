@@ -29,24 +29,35 @@ class ChatActivity : AppCompatActivity() {
         viewModel = ViewModelProviders.of(this).get(ChatViewModel::class.java)
 
         // Initialize RecyclerView
-        recyclerView_messages.adapter           = messagesAdapter
-        recyclerView_messages.layoutManager     = LinearLayoutManager(this)
+        recyclerView_messages.adapter = messagesAdapter
+        recyclerView_messages.layoutManager = LinearLayoutManager(this)
 
         // Observe data provided by ViewModel
         viewModel.getAllMessages().observe(this, Observer<List<MessageEntity>> { messages ->
-            messagesAdapter.setMessages(messages)
 
             // Upload fake messages as an initial input to mock another user's messages
             if (messages.isEmpty()) {
                 viewModel.uploadFakeInitialMessages(dateTimeInstance)
             }
+
+            // Upload stored messages
+            if (messagesAdapter.itemCount == 0) {
+                messagesAdapter.setMessages(messages)
+            }
         })
 
-        editText_messageInput.setOnKeyListener(View.OnKeyListener { v, keyCode, event ->
+        editText_messageInput.setOnKeyListener(View.OnKeyListener { _, keyCode, event ->
             if (keyCode == KeyEvent.KEYCODE_ENTER && event.action == KeyEvent.ACTION_UP) {
+
+                // Perform message sending
                 addNewMessage()
-                // Keep focus on this input element.
+
+                // Scroll recycler view after message is added
+                recyclerView_messages.scrollToPosition(messagesAdapter.itemCount - 1)
+
+                // Keep focus on the message input
                 editText_messageInput.requestFocus()
+
                 return@OnKeyListener true
             }
             false
@@ -54,9 +65,19 @@ class ChatActivity : AppCompatActivity() {
     }
 
     private fun addNewMessage() {
+
+        // Get data provided by user
         val messageText: String = editText_messageInput.text.toString()
         val currentDate = dateTimeInstance.format(java.util.Date())
-        viewModel.addMessage(MessageEntity(messageText, currentDate, true))
+        val newMessage = MessageEntity(messageText, currentDate, true)
+
+        // Store the message
+        viewModel.addMessage(newMessage)
+
+        // Display the message
+        messagesAdapter.addMessage(newMessage)
+
+        // Clear inputs
         editText_messageInput.text?.clear()
         editText_messageInput.clearFocus()
     }

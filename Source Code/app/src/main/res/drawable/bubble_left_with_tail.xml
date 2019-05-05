@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:drawable="@drawable/bubble_left_background_base"
+        android:left="@dimen/bubble_side_margin" />
+
+    <item
+        android:width="@dimen/bubble_corners_plus_tail"
+        android:height="@dimen/bubble_corners_plus_tail"
+        android:gravity="bottom|left"
+        android:drawable="@drawable/bubble_tail_left" />
+
+</layer-list>

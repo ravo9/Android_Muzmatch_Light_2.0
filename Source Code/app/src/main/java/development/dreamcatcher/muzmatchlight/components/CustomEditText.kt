@@ -3,16 +3,19 @@ package development.dreamcatcher.muzmatchlight.components
 import android.content.Context
 import android.graphics.drawable.Drawable
 import android.util.AttributeSet
+import android.view.KeyEvent
 import android.view.MotionEvent
 import android.view.View.OnTouchListener
 import androidx.appcompat.widget.AppCompatEditText
 import androidx.core.content.res.ResourcesCompat
 import development.dreamcatcher.muzmatchlight.R
+import android.view.inputmethod.BaseInputConnection
+
 
 
 class CustomEditText : AppCompatEditText {
 
-    internal var sendButtonImage: Drawable? = null
+    private var sendButtonImage: Drawable? = null
 
     constructor(context: Context) : super(context) {
         init()
@@ -36,30 +39,36 @@ class CustomEditText : AppCompatEditText {
         setCompoundDrawablesRelativeWithIntrinsicBounds(
                 null, null, sendButtonImage, null)
 
-        // If the Send button is tapped, send the message
-        setOnTouchListener(OnTouchListener { v, event ->
+        // Initialize touch listener for the Send button
+        setOnTouchListener(OnTouchListener { _, event ->
 
-            if (getCompoundDrawablesRelative()[2] != null) {
+            if (compoundDrawablesRelative[2] != null) {
 
+                // Check if clicked area belongs to the Send button
                 val clearButtonStart: Float
                 val clearButtonEnd: Float
-                var isClearButtonClicked = false
+                var isSendButtonClicked = false
 
-                if (getLayoutDirection() === LAYOUT_DIRECTION_RTL) {
-                    clearButtonEnd = (sendButtonImage!!.intrinsicWidth + getPaddingStart()).toFloat()
+                if (layoutDirection == LAYOUT_DIRECTION_RTL) {
+                    clearButtonEnd = (sendButtonImage!!.intrinsicWidth + paddingStart).toFloat()
                     if (event.x < clearButtonEnd) {
-                        isClearButtonClicked = true
+                        isSendButtonClicked = true
                     }
                 } else {
-                    clearButtonStart = (getWidth() - getPaddingEnd() - sendButtonImage!!.intrinsicWidth).toFloat()
+                    clearButtonStart = (width - paddingEnd - sendButtonImage!!.intrinsicWidth).toFloat()
                     if (event.x > clearButtonStart) {
-                        isClearButtonClicked = true
+                        isSendButtonClicked = true
                     }
                 }
 
-                if (isClearButtonClicked) {
+                // If the Send button is tapped, send the message
+                if (isSendButtonClicked) {
 
                     if (event.action == MotionEvent.ACTION_DOWN) {
+
+                        // Perform 'Send' action
+                        val inputConnection = BaseInputConnection(this, true)
+                        inputConnection.sendKeyEvent(KeyEvent(KeyEvent.ACTION_UP, KeyEvent.KEYCODE_ENTER))
 
                         // Switch to the faded version of Send button.
                         sendButtonImage?.alpha = 50
