@@ -11,8 +11,10 @@ class MessageRepository(application: Application) {
 
     private var allMessages: LiveData<List<MessageEntity>>
 
+    private val database: MessageDatabase
+
     init {
-        val database: MessageDatabase = MessageDatabase.getInstance(application.applicationContext)!!
+        database = MessageDatabase.getInstance(application.applicationContext)!!
         messageDao = database.messageDao()
         allMessages = messageDao.getAllMessages()
     }
@@ -22,11 +24,11 @@ class MessageRepository(application: Application) {
     }
 
     fun addMessage(message: MessageEntity) {
-        val insertMessageAsyncTask = InsertMessageAsyncTask(messageDao).execute(message)
+        InsertMessageAsyncTask(messageDao).execute(message)
     }
 
     fun deleteAllMessages() {
-        val deleteMessagesAsyncTask = InsertMessageAsyncTask(messageDao).execute()
+        InsertMessageAsyncTask(messageDao).execute()
     }
 
     private class InsertMessageAsyncTask(val messageDao: MessageDao) : AsyncTask<MessageEntity, Unit, Unit>() {

@@ -11,8 +11,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c88fd39-4ddf-43e3-91a7-e347c45946b2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bubble_left_no_tail.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bubble_right_no_tail.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -25,26 +23,16 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/development/dreamcatcher/muzmatchlight/ExampleInstrumentedTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/development/dreamcatcher/muzmatchlight/activities/ChatActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/development/dreamcatcher/muzmatchlight/activities/ChatActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/development/dreamcatcher/muzmatchlight/adapters/MessageAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/development/dreamcatcher/muzmatchlight/adapters/MessageAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/development/dreamcatcher/muzmatchlight/components/CustomEditText.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/development/dreamcatcher/muzmatchlight/components/CustomEditText.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/development/dreamcatcher/muzmatchlight/models/message/MessageEntity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/development/dreamcatcher/muzmatchlight/models/message/MessageEntity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/development/dreamcatcher/muzmatchlight/models/message/MessageRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/development/dreamcatcher/muzmatchlight/models/message/MessageRepository.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/development/dreamcatcher/muzmatchlight/viewmodels/ChatViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/development/dreamcatcher/muzmatchlight/viewmodels/ChatViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/anim/recycler_view_animation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/anim/recycler_view_animation.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/anim/single_row_new_message_animation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/anim/single_row_new_message_animation.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/anim/single_row_old_message_animation.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/badge_left.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bubble_left_background_base.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/badge_left_tail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bubble_tail_right.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/badge_left_with_tail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bubble_left_with_tail.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/badge_right.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bubble_right_background_base.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/badge_right_tail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bubble_tail_left.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/badge_right_with_tail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bubble_right_with_tail.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_chat.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_chat.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/listview_message.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/listview_message.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/listview_timestamp.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/development/dreamcatcher/muzmatchlight/ExampleUnitTest.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,17 +53,7 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="62" lean-forward="true" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -109,7 +87,6 @@
         <option value="$PROJECT_DIR$/gradle.properties" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/edit_text_background.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/development/dreamcatcher/muzmatchlight/models/message/MessageDao.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/development/dreamcatcher/muzmatchlight/models/message/MessageRepository.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/anim/recycler_view_animation.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/badge_left.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/badge_right.xml" />
@@ -126,15 +103,19 @@
         <option value="$PROJECT_DIR$/app/src/main/res/anim/animator.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/listview_placeholder.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/development/dreamcatcher/muzmatchlight/components/CustomEditText.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/development/dreamcatcher/muzmatchlight/activities/ChatActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/development/dreamcatcher/muzmatchlight/models/message/MessageEntity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_chat.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/anim/single_row_new_message_animation.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/listview_message.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/development/dreamcatcher/muzmatchlight/adapters/MessageAdapter.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/development/dreamcatcher/muzmatchlight/viewmodels/ChatViewModel.kt" />
+        <option value="$PROJECT_DIR$/app/src/androidTest/java/development/dreamcatcher/muzmatchlight/MessageRepositoryTest.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/development/dreamcatcher/muzmatchlight/models/message/MessageRepository.kt" />
+        <option value="$PROJECT_DIR$/app/src/test/java/development/dreamcatcher/muzmatchlight/MessageRepositoryTest.java" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/java/development/dreamcatcher/muzmatchlight/activities/ChatActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/development/dreamcatcher/muzmatchlight/viewmodels/ChatViewModel.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/development/dreamcatcher/muzmatchlight/adapters/MessageAdapter.kt" />
       </list>
     </option>
   </component>
@@ -178,6 +159,74 @@
             </path>
             <path>
               <item name="Source Code" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="manifests" type="f94875db:AndroidManifestsGroupNode" />
+            </path>
+            <path>
+              <item name="Source Code" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+            </path>
+            <path>
+              <item name="Source Code" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="muzmatchlight" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Source Code" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="muzmatchlight" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="activities" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Source Code" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="muzmatchlight" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="adapters" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Source Code" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="muzmatchlight" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Source Code" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="muzmatchlight" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="message" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Source Code" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="muzmatchlight" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="viewmodels" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Source Code" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+            </path>
+            <path>
+              <item name="Source Code" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
+            </path>
+            <path>
+              <item name="Source Code" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="values" type="ddeffd01:AndroidResFolderTypeNode" />
+            </path>
+            <path>
+              <item name="Source Code" type="1abcf292:AndroidViewProjectNode" />
               <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
             </path>
           </expand>
@@ -203,6 +252,12 @@
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
       <recent name="development.dreamcatcher.muzmatchlight.models.Message" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="development.dreamcatcher.muzmatchlight" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="development.dreamcatcher.muzmatchlight" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Android\workspace\Muzmatch Light 2.0 Git\Android_Muzmatch_Light_2.0\Source Code\app\src\main\res\layout" />
       <recent name="C:\Users\Android\workspace\Muzmatch Light 2.0 Git\Android_Muzmatch_Light_2.0\Source Code\app\src\main\res\anim" />
@@ -222,7 +277,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Android App.app">
     <configuration name="&lt;template&gt;" type="Applet" default="true" selected="false">
       <option name="MAIN_CLASS_NAME" />
       <option name="HTML_FILE_NAME" />
@@ -255,6 +310,86 @@
     </configuration>
     <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+    </configuration>
+    <configuration name="MessageRepositoryTest (1)" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="development.dreamcatcher.muzmatchlight.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="development.dreamcatcher.muzmatchlight" />
+      <option name="MAIN_CLASS_NAME" value="development.dreamcatcher.muzmatchlight.MessageRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MessageRepositoryTest (2)" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="development.dreamcatcher.muzmatchlight.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="development.dreamcatcher.muzmatchlight" />
+      <option name="MAIN_CLASS_NAME" value="development.dreamcatcher.muzmatchlight.MessageRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MessageRepositoryTest (3)" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="development.dreamcatcher.muzmatchlight.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="development.dreamcatcher.muzmatchlight" />
+      <option name="MAIN_CLASS_NAME" value="development.dreamcatcher.muzmatchlight.MessageRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MessageRepositoryTest (5)" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="development.dreamcatcher.muzmatchlight.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="development.dreamcatcher.muzmatchlight" />
+      <option name="MAIN_CLASS_NAME" value="development.dreamcatcher.muzmatchlight.MessageRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MessageRepositoryTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="development.dreamcatcher.muzmatchlight.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="development.dreamcatcher.muzmatchlight" />
+      <option name="MAIN_CLASS_NAME" value="development.dreamcatcher.muzmatchlight.MessageRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="TEST_OBJECT" value="class" />
@@ -330,6 +465,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Android JUnit.MessageRepositoryTest (3)" />
+        <item itemvalue="Android JUnit.MessageRepositoryTest (2)" />
+        <item itemvalue="Android JUnit.MessageRepositoryTest (1)" />
+        <item itemvalue="Android JUnit.MessageRepositoryTest" />
+        <item itemvalue="Android JUnit.MessageRepositoryTest (5)" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -344,16 +488,47 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="MessageRepositoryTest - 2019.05.06 at 07h 34m 11s.xml">
+      <configuration name="MessageRepositoryTest" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="MessageRepositoryTest_(1) - 2019.05.06 at 07h 42m 51s.xml">
+      <configuration name="MessageRepositoryTest (1)" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="MessageRepositoryTest_(2) - 2019.05.06 at 07h 46m 51s.xml">
+      <configuration name="MessageRepositoryTest (2)" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="MessageRepositoryTest_(4) - 2019.05.06 at 07h 53m 40s.xml">
+      <configuration name="MessageRepositoryTest (4)" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="MessageRepositoryTest_(5) - 2019.05.06 at 07h 55m 23s.xml">
+      <configuration name="MessageRepositoryTest (5)" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="MessageRepositoryTest - 2019.05.06 at 07h 57m 11s.xml">
+      <configuration name="MessageRepositoryTest" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="MessageRepositoryTest_(1) - 2019.05.06 at 08h 02m 44s.xml">
+      <configuration name="MessageRepositoryTest (1)" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="MessageRepositoryTest_(2) - 2019.05.06 at 08h 04m 54s.xml">
+      <configuration name="MessageRepositoryTest (2)" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="MessageRepositoryTest_(3) - 2019.05.06 at 08h 07m 18s.xml">
+      <configuration name="MessageRepositoryTest (3)" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="MessageRepositoryTest_(3) - 2019.05.06 at 08h 21m 34s.xml">
+      <configuration name="MessageRepositoryTest (3)" configurationId="AndroidJUnit" />
+    </history-entry>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="1" />
       <window_info id="Build Variants" order="2" sideWeight="0.50080514" side_tool="true" weight="0.32980332" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Capture Tool" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.49919486" visible="true" weight="0.24659607" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.49919486" visible="true" weight="0.28744328" />
       <window_info id="Image Layers" order="6" />
       <window_info id="Structure" order="7" side_tool="true" />
       <window_info id="Resources Explorer" order="8" />
@@ -405,13 +580,6 @@
     </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-59">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/development/dreamcatcher/muzmatchlight/models/message/NoteDao.kt" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/development/dreamcatcher/muzmatchlight/models/message/Note.kt" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/development/dreamcatcher/muzmatchlight/models/message/NoteDatabase.kt" />
@@ -573,23 +741,6 @@
       </provider>
       <provider editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/development/dreamcatcher/muzmatchlight/components/CustomEditText.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/development/dreamcatcher/muzmatchlight/models/message/MessageEntity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-          <folding>
-            <element signature="e#63#154#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/listview_timestamp.xml">
       <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="android-designer2" />
@@ -601,10 +752,69 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/anim/single_row_new_message_animation.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="69" selection-start-line="14" selection-start-column="69" selection-end-line="14" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/development/dreamcatcher/muzmatchlight/models/message/MessageEntity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding>
+            <element signature="e#63#154#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/development/dreamcatcher/muzmatchlight/MessageRepositoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" lean-forward="true" selection-end-line="58" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/development/dreamcatcher/muzmatchlight/components/CustomEditText.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="75" selection-start-line="75" selection-end-line="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="58" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/development/dreamcatcher/muzmatchlight/activities/ChatActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="86" column="8" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="8" />
+          <folding>
+            <element signature="e#59#673#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/development/dreamcatcher/muzmatchlight/models/message/MessageRepository.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+        <state relative-caret-position="391">
+          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -615,86 +825,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/development/dreamcatcher/muzmatchlight/models/message/MessageDatabase.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
           <folding>
             <element signature="e#63#183#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/anim/single_row_new_message_animation.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/listview_message.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="69" selection-start-line="14" selection-start-column="69" selection-end-line="14" selection-end-column="69" />
+        <state relative-caret-position="153">
+          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_chat.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
+        <state relative-caret-position="126">
           <caret line="16" column="65" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
           <folding>
-            <element signature="e#1717#1753#0" expanded="true" />
+            <element signature="e#808#846#0" expanded="true" />
           </folding>
         </state>
       </provider>
       <provider editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/listview_message.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/development/dreamcatcher/muzmatchlight/adapters/MessageAdapter.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
-          <folding>
-            <element signature="e#837#878#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/development/dreamcatcher/muzmatchlight/activities/ChatActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="62" column="17" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
-          <folding>
-            <element signature="e#59#673#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="160">
+          <caret line="97" column="44" selection-start-line="97" selection-start-column="44" selection-end-line="97" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/development/dreamcatcher/muzmatchlight/viewmodels/ChatViewModel.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+        <state relative-caret-position="-161">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
           <folding>
-            <element signature="e#59#368#0" expanded="true" />
+            <element signature="e#59#416#0" expanded="true" />
+            <element signature="e#1207#1250#1" expanded="true" />
+            <element signature="e#1303#1346#1" expanded="true" />
+            <element signature="e#1398#1441#1" expanded="true" />
+            <element signature="e#1494#1537#1" expanded="true" />
+            <element signature="e#1589#1632#1" expanded="true" />
+            <element signature="e#1685#1728#1" expanded="true" />
+            <element signature="e#1780#1823#1" expanded="true" />
+            <element signature="e#1876#1919#1" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/development/dreamcatcher/muzmatchlight/adapters/MessageAdapter.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="158" column="25" selection-start-line="158" selection-start-column="25" selection-end-line="158" selection-end-column="25" />
-          <folding>
-            <element signature="e#57#638#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="62" lean-forward="true" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
+        <state relative-caret-position="34">
+          <caret line="2" column="51" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
         </state>
       </provider>
     </entry>

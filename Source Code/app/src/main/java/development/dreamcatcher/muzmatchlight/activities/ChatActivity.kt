@@ -62,6 +62,15 @@ class ChatActivity : AppCompatActivity() {
             }
             false
         })
+
+        // Scroll the recycler view when Soft Input (keyboard) is triggered to be displayed
+        recyclerView_messages.addOnLayoutChangeListener { _, _, _, _, bottom, _, _, _, oldBottom ->
+            if (bottom < oldBottom) {
+                recyclerView_messages.postDelayed({
+                    recyclerView_messages.scrollToPosition(messagesAdapter.itemCount - 1)
+                }, 100)
+            }
+        }
     }
 
     private fun addNewMessage() {

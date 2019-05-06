@@ -1,7 +1,6 @@
 package development.dreamcatcher.muzmatchlight.adapters
 
 import android.content.Context
-import android.util.Log
 import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
@@ -16,6 +15,8 @@ import kotlinx.android.synthetic.main.listview_message.view.*
 import java.text.SimpleDateFormat
 import java.util.*
 import kotlin.collections.ArrayList
+import android.view.Display
+import android.R.attr.*
 
 
 class MessageAdapter : RecyclerView.Adapter<ViewHolder>() {
@@ -50,8 +51,8 @@ class MessageAdapter : RecyclerView.Adapter<ViewHolder>() {
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
+        // Assign bubble to the left or right-hand side
         val bubbleSideStatus = getSideStatus(position)
-
         when (bubbleSideStatus) {
             RIGHT_SIDE -> {
                 holder.messageContainer.gravity  = Gravity.END
@@ -65,6 +66,7 @@ class MessageAdapter : RecyclerView.Adapter<ViewHolder>() {
             }
         }
 
+        // Set bubble's tail
         if (shouldHaveTail(position)) {
             when(bubbleSideStatus) {
                 RIGHT_SIDE -> {
@@ -93,7 +95,7 @@ class MessageAdapter : RecyclerView.Adapter<ViewHolder>() {
             val date = dateTimeInstance.parse(messages[position].timestamp)
             val weekday = SimpleDateFormat("EEEE", Locale.ENGLISH).format(date)
             val time = SimpleDateFormat("HH:mm", Locale.ENGLISH).format(date)
-            val timeForDisplay = weekday + " " + time
+            val timeForDisplay = "$weekday  $time"
             holder.messageTimestamp.text = timeForDisplay
             holder.messageTimestamp.visibility = View.VISIBLE
         } else {
@@ -106,34 +108,8 @@ class MessageAdapter : RecyclerView.Adapter<ViewHolder>() {
         // Set new message animation
         if (displayedAnimationsCounter < messages.size) {
 
-            // Initialize set of animations
-            val animationSet = AnimationSet(true)
-
-            // Initialize Translate Animation
-            val translateAnimation: Animation = TranslateAnimation(
-                    Animation.ABSOLUTE, -600.0f,
-                    Animation.RELATIVE_TO_SELF, 0.0f,
-                    Animation.ABSOLUTE, 100f,
-                    Animation.RELATIVE_TO_SELF, 0.0f)
-
-            // Initialize Alpha (Fade In) Animation
-            val alphaAnimation = AlphaAnimation(0f, 1f)
-
-            // Initialize Scale Animation
-            val scaleAnimation = ScaleAnimation(
-                    4f, 1f,
-                    1f, 1f,
-                    Animation.RELATIVE_TO_SELF, 0.5f,
-                    Animation.RELATIVE_TO_SELF, 0.5f)
-            scaleAnimation.fillAfter = true
-
-            // Join animations together
-            animationSet.addAnimation(translateAnimation)
-            animationSet.addAnimation(alphaAnimation)
-            animationSet.addAnimation(scaleAnimation)
-
-            // Set time for the animation set
-            animationSet.duration = 700
+            // Prepare animation set
+            val animationSet = prepareAnimationSet()
 
             // Start the animation
             holder.messageContainer?.startAnimation(animationSet)
@@ -173,9 +149,6 @@ class MessageAdapter : RecyclerView.Adapter<ViewHolder>() {
             val previousItemTimeValue = dateTimeInstance.parse(previousItemTime)
             val currentItemTimeValue = dateTimeInstance.parse(currentItemTime)
             val timeDifferenceSeconds = (currentItemTimeValue.time - previousItemTimeValue.time) / 1000
-//            Log.d("FlagTest01", previousItemTimeValue.toString())
-//            Log.d("FlagTest01", currentItemTimeValue.toString())
-//            Log.d("FlagTest01", timeDifferenceSeconds.toString())
             return timeDifferenceSeconds
         }
         else return null
@@ -187,14 +160,45 @@ class MessageAdapter : RecyclerView.Adapter<ViewHolder>() {
         val currentTime = java.util.Date().time
         val currentItemTimeValue = dateTimeInstance.parse(currentItemTime)
         val timeDifferenceSeconds = (currentTime - currentItemTimeValue.time) / 1000
-        Log.d("FlagTest01", currentTime.toString())
-        Log.d("FlagTest01", currentItemTimeValue.time.toString())
-        Log.d("FlagTest01", timeDifferenceSeconds.toString())
         return timeDifferenceSeconds
     }
 
     private fun hasSameOwnerAsPreviousMessage(position: Int) :Boolean {
         return (position > 0 && messages[position-1].isOwnMessage == messages[position].isOwnMessage)
+    }
+
+    private fun prepareAnimationSet(): AnimationSet {
+
+        // Initialize set of animations
+        val animationSet = AnimationSet(true)
+
+        // Initialize Translate Animation
+        val translateAnimation: Animation = TranslateAnimation(
+                Animation.ABSOLUTE, -600.0f,
+                Animation.RELATIVE_TO_SELF, 0.0f,
+                Animation.ABSOLUTE, 200f,
+                Animation.RELATIVE_TO_SELF, 0.0f)
+
+        // Initialize Alpha (Fade In) Animation
+        val alphaAnimation = AlphaAnimation(0f, 1f)
+
+        // Initialize Scale Animation
+        val scaleAnimation = ScaleAnimation(
+                4f, 1f,
+                1f, 1f,
+                Animation.RELATIVE_TO_SELF, 0.5f,
+                Animation.RELATIVE_TO_SELF, 0.5f)
+        scaleAnimation.fillAfter = true
+
+        // Join animations together
+        animationSet.addAnimation(translateAnimation)
+        animationSet.addAnimation(alphaAnimation)
+        animationSet.addAnimation(scaleAnimation)
+
+        // Set time for the animation set
+        animationSet.duration = 700
+
+        return animationSet
     }
 }
 

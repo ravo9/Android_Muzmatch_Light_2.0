@@ -2,6 +2,15 @@
 
     <string name="app_name">Muzmatch Light</string>
 
+    <string name="fakeMessage01">Hi ;)</string>
+    <string name="fakeMessage02">Hello :)</string>
+    <string name="fakeMessage03">How are you today…? ;)</string>
+    <string name="fakeMessage04">Not bad :P How about yourself?</string>
+    <string name="fakeMessage05">Same :D</string>
+    <string name="fakeMessage06">How do you like my app?</string>
+    <string name="fakeMessage07">Not bad :P</string>
+    <string name="fakeMessage08">Where do you live?</string>
+
     <dimen name="bubble_corners">10dp</dimen>
     <dimen name="bubble_corners_plus_tail">15dp</dimen>
     <dimen name="bubble_side_margin">5dp</dimen>
